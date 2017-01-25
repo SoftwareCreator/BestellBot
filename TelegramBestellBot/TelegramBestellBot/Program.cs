@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Telegram.Bot;
+using System.Windows.Forms;
 
 namespace TelegramBestellBot
 {
@@ -13,11 +14,20 @@ namespace TelegramBestellBot
         static void Main(string[] args)
         {
             var me = Bot.GetMeAsync().Result;
-            Console.WriteLine(me.Id + " " + me.FirstName + " " + me.LastName);
             Bot.OnMessage += OnMessageReceived;
             Bot.OnReceiveError += OnErrorReceived;
             Bot.StartReceiving();
-            Console.ReadLine();
+            bool stop = false;
+            while (!stop)
+            {
+                var key = Console.ReadKey();
+                if (key.Key == ConsoleKey.S && key.Modifiers == ConsoleModifiers.Alt)
+                {
+                    var result = MessageBox.Show("Wollen Sie die API wirklich beenden", "Beenden", MessageBoxButtons.YesNo);
+                    Console.WriteLine(result);
+                    //stop = true;
+                }
+            }
             Bot.StopReceiving();
             
         }
@@ -25,6 +35,40 @@ namespace TelegramBestellBot
         private static void OnErrorReceived(object sender, Telegram.Bot.Args.ReceiveErrorEventArgs e)
         {
             Console.WriteLine(e.ApiRequestException);
+        }
+
+        private static void Bot_OnMessage(object sender, Telegram.Bot.Args.MessageEventArgs e)
+        {
+            switch (e.Message.Type)
+            {
+                case Telegram.Bot.Types.Enums.MessageType.UnknownMessage:
+                    break;
+                case Telegram.Bot.Types.Enums.MessageType.TextMessage:
+                    Messages.HandleTextMessages.Answer(bot, e.Message);
+                    break;
+                case Telegram.Bot.Types.Enums.MessageType.PhotoMessage:
+                    break;
+                case Telegram.Bot.Types.Enums.MessageType.AudioMessage:
+                    break;
+                case Telegram.Bot.Types.Enums.MessageType.VideoMessage:
+                    break;
+                case Telegram.Bot.Types.Enums.MessageType.VoiceMessage:
+                    break;
+                case Telegram.Bot.Types.Enums.MessageType.DocumentMessage:
+                    break;
+                case Telegram.Bot.Types.Enums.MessageType.StickerMessage:
+                    break;
+                case Telegram.Bot.Types.Enums.MessageType.LocationMessage:
+                    break;
+                case Telegram.Bot.Types.Enums.MessageType.ContactMessage:
+                    break;
+                case Telegram.Bot.Types.Enums.MessageType.ServiceMessage:
+                    break;
+                case Telegram.Bot.Types.Enums.MessageType.VenueMessage:
+                    break;
+                default:
+                    break;
+            }
         }
 
         private static async void OnMessageReceived(object sender, Telegram.Bot.Args.MessageEventArgs e)

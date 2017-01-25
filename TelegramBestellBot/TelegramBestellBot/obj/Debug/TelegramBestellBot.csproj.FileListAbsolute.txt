@@ -10,3 +10,15 @@ D:\Programmieren\Schule\C#\TelegramBestellBot\TelegramBestellBot\bin\Debug\Teleg
 D:\Programmieren\Schule\C#\TelegramBestellBot\TelegramBestellBot\obj\Debug\TelegramBestellBot.csprojResolveAssemblyReference.cache
 D:\Programmieren\Schule\C#\TelegramBestellBot\TelegramBestellBot\obj\Debug\TelegramBestellBot.exe
 D:\Programmieren\Schule\C#\TelegramBestellBot\TelegramBestellBot\obj\Debug\TelegramBestellBot.pdb
+D:\Programmieren\Freizeit\BestellBot\TelegramBestellBot\TelegramBestellBot\bin\Debug\TelegramBestellBot.exe.config
+D:\Programmieren\Freizeit\BestellBot\TelegramBestellBot\TelegramBestellBot\obj\Debug\TelegramBestellBot.exe
+D:\Programmieren\Freizeit\BestellBot\TelegramBestellBot\TelegramBestellBot\obj\Debug\TelegramBestellBot.pdb
+D:\Programmieren\Freizeit\BestellBot\TelegramBestellBot\TelegramBestellBot\bin\Debug\TelegramBestellBot.exe
+D:\Programmieren\Freizeit\BestellBot\TelegramBestellBot\TelegramBestellBot\bin\Debug\TelegramBestellBot.pdb
+D:\Programmieren\Freizeit\BestellBot\TelegramBestellBot\TelegramBestellBot\bin\Debug\Newtonsoft.Json.dll
+D:\Programmieren\Freizeit\BestellBot\TelegramBestellBot\TelegramBestellBot\bin\Debug\System.Net.Http.Formatting.dll
+D:\Programmieren\Freizeit\BestellBot\TelegramBestellBot\TelegramBestellBot\bin\Debug\Telegram.Bot.dll
+D:\Programmieren\Freizeit\BestellBot\TelegramBestellBot\TelegramBestellBot\bin\Debug\Newtonsoft.Json.xml
+D:\Programmieren\Freizeit\BestellBot\TelegramBestellBot\TelegramBestellBot\bin\Debug\System.Net.Http.Formatting.xml
+D:\Programmieren\Freizeit\BestellBot\TelegramBestellBot\TelegramBestellBot\bin\Debug\Telegram.Bot.xml
+D:\Programmieren\Freizeit\BestellBot\TelegramBestellBot\TelegramBestellBot\obj\Debug\TelegramBestellBot.csprojResolveAssemblyReference.cache
